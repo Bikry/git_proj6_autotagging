@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <a href="result.php?nom=entrer"></a>
+		
+	</head>
+
+	<body align=center>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"><legend><h1>TAGS GENERATOR</h1></legend></div>
+			<div class="col-md-4"></div>
+		</div>
+			<br>
+			<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<form class="form-horizontal" action={{ url_for('result') }}  method="post">
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="title">TITLE:</label>
+						<br>
+						<input type="text" style="height:50px;width:1100px;font-size:14pt;wrap:hard"  class="form-control"  id="title" name="title">
+
+						
+					</div>
+					<br>
+					<br>
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="question">QUESTION:</label>
+						<div class="col-xs-7">
+							<input type="text" style="height:50px;width:1100px;font-size:14pt;wrap:hard" class="form-control" name="question" >
+						</div>
+					</div>
+				
+            		</div>
+
+            		<br>
+					<br>
+					<div class="form-group">
+            			<div class="col-xs-offset-3 col-xs-9">
+                			<input type="submit" class="btn btn-success" name = entrer>
+                			<input type="reset" class="btn btn-danger" value="Reset">
+            			</div>
+        			</div>
+        		</form>
+        	</div>
+        	<div class="col-md-4"></div></div>
+		</div>
+	
+
+
+
+
+
+	</body>
+</html>
